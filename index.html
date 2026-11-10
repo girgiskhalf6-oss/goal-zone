@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GOAL ZONE | Football teams, players, matches and quiz</title>
+<meta name="description" content="GOAL ZONE is a bilingual (English/Arabic) football fan hub: teams, players, fixtures, a trivia quiz and a respectful fan zone. Sample content is clearly labeled.">
+<meta property="og:type" content="website"><meta property="og:title" content="GOAL ZONE - Football fan hub"><meta property="og:description" content="Teams, players, matches, quiz and fan zone in English and Arabic."><meta property="og:image" content="assets/og.svg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#06140d"><link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMwNjE0MGQiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmJmZjg4IiBzdHJva2Utd2lkdGg9IjQiLz48cGF0aCBkPSJNMzIgMTR2MzZNMTQgMzJoMzYiIHN0cm9rZT0iIzJiZmY4OCIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9zdmc+Cg=="><link rel="canonical" href="https://YOUR-DOMAIN/">
+<style>
+:root{--bg:#06140d;--bg2:#0c2218;--line:#1d4a33;--g:#2bff88;--tx:#f4fff8;--mu:#9bb8a8;--y:#ffe14d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:1rem/1.65 "Segoe UI",Tahoma,"Noto Sans Arabic",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}img,svg{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--y);outline-offset:2px}
+.wrap{max-width:1180px;margin:auto;padding:0 1.1rem}
+.skip{position:absolute;inset-inline-start:-999px}.skip:focus{inset-inline-start:8px;top:8px;background:var(--y);color:#000;padding:.5rem;z-index:99}
+h1,h2,h3{font-family:"Arial Narrow","Franklin Gothic Medium",Impact,sans-serif;font-weight:900;line-height:1.05;margin:0 0 .6rem}
+[dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3{font-family:"Segoe UI",Tahoma,sans-serif;line-height:1.3}
+h1{font-size:clamp(2.6rem,8vw,5.6rem)}h2{font-size:clamp(1.7rem,4vw,2.6rem)}h3{font-size:1.2rem}
+.top{position:sticky;top:0;z-index:20;background:rgba(6,20,13,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:.8rem;min-height:64px}
+.logo{font:900 1.6rem/1 "Arial Black",Impact,sans-serif;font-style:italic}.logo b{color:var(--g)}
+#nav{display:flex;gap:.2rem;margin-inline-start:auto}
+#nav a{padding:.5rem .8rem;border-radius:99px;color:var(--mu);transition:.2s}#nav a:hover,#nav a.on{background:var(--bg2);color:var(--g)}
+#sf{display:flex}#sf input{width:130px}
+input,select,textarea,button{font:inherit;color:inherit}
+input,select,textarea{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:.55rem .8rem;width:100%}
+button,.btn{cursor:pointer;background:var(--g);color:#032012;font-weight:800;border:0;border-radius:10px;padding:.6rem 1.1rem;display:inline-block;transition:transform .15s,box-shadow .15s}
+button:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(43,255,136,.3)}
+#sf button{margin-inline-start:.3rem}
+.pill{background:transparent;color:var(--g);border:1px solid var(--g);padding:.4rem .9rem}
+.ghost{background:transparent;color:var(--tx);border:1px solid var(--line)}
+#burger{display:none;background:none;padding:.5rem}#burger span{display:block;width:24px;height:3px;background:var(--g);margin:5px 0}
+.demo{background:var(--y);color:#201a00;text-align:center;font-size:.85rem;padding:.3rem 1rem;font-weight:600}
+main{min-height:70vh;outline:0}section{padding:2.5rem 0}
+.hero{position:relative;overflow:hidden;padding:4rem 0 3rem;background:radial-gradient(ellipse at 80% 0,#0f3a26,transparent 60%)}
+.hero .art{position:absolute;inset:0;width:100%;height:100%;opacity:.55;z-index:0}.hero .wrap{position:relative;z-index:1}
+.hero p{max-width:34rem;color:var(--mu);font-size:1.15rem}.hero h1 em{font-style:normal;color:var(--g);display:block}
+.row{display:flex;gap:.8rem;flex-wrap:wrap;align-items:center}
+.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:1.2rem;border-bottom:2px solid var(--line);padding-bottom:.4rem}
+.grid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:hidden;position:relative;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-5px);border-color:var(--g)}
+.card .im{aspect-ratio:4/3;display:block;overflow:hidden}.card .im svg{width:100%;height:100%;transition:transform .5s}.card:hover .im svg{transform:scale(1.07)}
+.card .bd{padding:.9rem 1rem 1.1rem}.card p{margin:.2rem 0;color:var(--mu);font-size:.92rem}
+.fav{position:absolute;top:.6rem;inset-inline-end:.6rem;background:rgba(6,20,13,.8);color:var(--tx);width:40px;height:40px;border-radius:50%;padding:0;font-size:1.2rem}.fav[aria-pressed=true]{color:#ff4d6d}
+.tag{display:inline-block;font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:.05rem .6rem;color:var(--g);margin-inline-end:.3rem}
+.news{display:grid;gap:1.1rem;grid-template-columns:1.4fr 1fr}.news .card:first-child{grid-row:span 2}
+.tools{display:grid;gap:.7rem;grid-template-columns:2fr 1fr 1fr;margin-bottom:1.3rem}
+.match{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:1rem;margin-bottom:.8rem}
+.match .tm{display:flex;align-items:center;gap:.7rem;font-weight:700}.match .tm:first-child{flex-direction:row-reverse}.match .tm:last-child{flex-direction:row}
+.match .mid{text-align:center;min-width:130px}.sc{font:900 1.8rem "Arial Narrow",sans-serif}.st{font-size:.9rem;color:var(--mu)}
+.opt{display:block;width:100%;text-align:start;margin:.5rem 0;background:var(--bg2);color:var(--tx);border:1px solid var(--line);font-weight:600}
+.opt.ok{background:#0d6b3a;border-color:var(--g)}.opt.no{background:#6b1d2a;border-color:#ff4d6d}
+.bigscore{font:900 6rem/1 "Arial Black",sans-serif;color:var(--g)}
+.bar2{height:10px;background:var(--line);border-radius:9px;overflow:hidden;margin:.3rem 0 1rem}.bar2 i{display:block;height:100%;background:var(--g);transition:width .6s}
+.box{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:1.2rem;margin-bottom:1rem}
+.post{border-inline-start:3px solid var(--g);padding:.4rem .9rem;margin:.6rem 0;background:rgba(255,255,255,.03)}
+.sk{height:200px;border-radius:16px;background:linear-gradient(90deg,var(--bg2),#12301f,var(--bg2));background-size:200% 100%;animation:sh 1.2s infinite;margin-bottom:1rem}@keyframes sh{to{background-position:-200% 0}}
+.err{border:1px solid #ff4d6d;border-radius:12px;padding:1rem}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.75);display:grid;place-items:center;z-index:50;padding:1rem}.modal .box{max-width:560px;width:100%;margin:0;max-height:90vh;overflow:auto}
+footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--mu);font-size:.9rem;margin-top:2rem}
+@media(max-width:1000px){#burger{display:block;margin-inline-start:auto}
+#nav{display:none;position:absolute;top:100%;inset-inline:0;background:var(--bg);flex-direction:column;padding:1rem;border-bottom:1px solid var(--line)}#nav.open{display:flex}
+.news,.tools{grid-template-columns:1fr}.news .card:first-child{grid-row:auto}.match{grid-template-columns:1fr;text-align:center}.match .tm,.match .tm:first-child,.match .tm:last-child{justify-content:center;flex-direction:row}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.bar{flex-wrap:wrap}.card .bd p{line-height:1.5}
+[dir=rtl] body{line-height:1.85}[dir=rtl] .hero{background:radial-gradient(ellipse at 20% 0,#0f3a26,transparent 60%)}[dir=rtl] .hero .art{transform:scaleX(-1)}
+[dir=rtl] .logo{direction:ltr}[dir=rtl] .tag,[dir=rtl] .st{letter-spacing:0}
+@media(max-width:1000px){#sf{order:10;width:100%;padding-bottom:.7rem}#sf input{flex:1;width:auto;min-width:0;min-height:46px}#sf{gap:.4rem}#sf button{margin:0}}
+@media(max-width:600px){html{font-size:17.5px}.wrap{padding:0 1rem}section{padding:1.6rem 0}.grid{grid-template-columns:1fr;gap:1.2rem}.card .im{aspect-ratio:16/10}.card .bd{padding:1rem 1.1rem 1.2rem}h3{font-size:1.35rem}.card p{font-size:1rem}.tag{font-size:.88rem;padding:.15rem .7rem;margin-bottom:.3rem}.match{padding:1rem}.match .mid{min-width:0}.fav{width:46px;height:46px}button,.btn,select,input{min-height:46px}.hero{padding:2.5rem 0 2rem}.hero p{font-size:1.08rem}#nav a{padding:.8rem 1rem;font-size:1.05rem}.opt{padding:.85rem 1rem;font-size:1.05rem}.bigscore{font-size:4.5rem}.head{flex-wrap:wrap;gap:.6rem}.demo{font-size:.9rem}}
+
+/* accounts */
+#auth{display:flex;gap:.5rem;align-items:center}.authbtns{padding:.45rem .9rem}
+.chip{display:flex;align-items:center;gap:.5rem;background:var(--bg2);border:1px solid var(--line);border-radius:99px;padding:.2rem .8rem .2rem .25rem;font-weight:700;max-width:170px}.chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lo{padding:.4rem .8rem}.nav-auth{display:none}
+.form{max-width:480px;margin:0 auto}.authart{margin:-1.2rem -1.2rem 1rem;height:120px;overflow:hidden;border-radius:16px 16px 0 0}.authart svg{width:100%;height:100%}
+.fld{margin:.9rem 0}.fld label,legend{display:block;font-weight:700;margin-bottom:.3rem}fieldset{border:0;padding:0;margin:1rem 0}
+input[type=checkbox],input[type=radio]{width:20px;height:20px;min-height:0;padding:0;accent-color:var(--g);vertical-align:middle}
+.chk{display:inline-flex;gap:.5rem;align-items:center}.spread{justify-content:space-between}.wide{width:100%;margin:.4rem 0 1rem}button:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+.lnk{color:var(--g);text-decoration:underline}.msg{min-height:1.4rem;color:#ff7a8e;font-weight:600;margin:.4rem 0}.msg.okm{color:var(--g)}
+.warn{border:1px solid var(--y);background:rgba(255,225,77,.08);border-radius:12px;padding:.8rem 1rem;margin:.6rem 0 1rem}
+.avp{position:relative;cursor:pointer;border-radius:50%}.avp input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}.avp svg{display:block;border-radius:50%}.avp input:checked+svg{outline:3px solid var(--g);outline-offset:3px}.avp input:focus-visible+svg{outline:3px solid var(--y);outline-offset:3px}
+.prof{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}.grow{flex:1;min-width:200px}.grow p{margin:.2rem 0;display:flex;align-items:center;gap:.4rem}.bigav svg{border-radius:50%}.editf{border-top:1px solid var(--line);margin-top:1rem;padding-top:.5rem}
+.stats{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}.stat{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:1rem;color:var(--mu)}.stat b{display:block;font:900 2rem/1.1 "Arial Narrow",Impact,sans-serif;color:var(--g)}
+.fav[data-save][aria-pressed=true]{color:var(--y)}
+.toast{opacity:0;pointer-events:none;position:fixed;bottom:1rem;inset-inline:1rem;margin:auto;max-width:440px;background:#0f3a26;border:1px solid var(--g);border-radius:12px;padding:.8rem 1rem;z-index:60;transform:translateY(160%);transition:transform .3s;text-align:center}.toast.show{transform:none;opacity:1;pointer-events:auto}.toast a{color:var(--g);text-decoration:underline}
+@media(max-width:1000px){.nav-auth{display:block}.authbtns,.lo{display:none}#auth{margin-inline-start:auto}#burger{margin-inline-start:0}#nav button.nav-auth{width:100%;margin-top:.4rem}}
+@media(max-width:600px){.chip span{display:none}.chip{padding:.2rem}.prof{justify-content:center;text-align:center}.grow p{justify-content:center}.authart{height:96px}}
+@media(min-width:1001px){#sf input{width:120px}#sf button{display:none}#nav a{padding:.5rem .65rem}}
+[dir=rtl] .chip{padding:.2rem .25rem .2rem .8rem}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i="skip">Skip to content</a>
+<header class="top"><div class="wrap bar">
+<a class="logo" href="#/home" aria-label="GOAL ZONE">GOAL<b>ZONE</b></a>
+<nav id="nav" aria-label="Main"></nav>
+<div id="auth"></div>
+<form id="sf" role="search"><input id="q" type="search" data-ph="search" aria-label="Search"><button data-i="go">Go</button></form>
+<button id="lang" class="pill" aria-label="Language">AR</button>
+<button id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+<div class="demo" data-i="demo"></div>
+<main id="main" tabindex="-1" aria-live="polite"></main>
+<footer><div class="wrap"><b>GOAL ZONE</b> <span data-i="foot"></span></div></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:2rem">GOAL ZONE needs JavaScript enabled.</p></noscript>
+<script src="js/config.js"></script>
+<script>
+/* DEMONSTRATION DATA: all clubs, players, stories and matches below are fictional. */
+const LG={d:['Delta Premier','دوري الدلتا'],a:['Atlas League','دوري الأطلس'],c:['Coastal Cup','كأس الساحل']};
+const POS={GK:['Goalkeeper','حارس مرمى'],DF:['Defender','مدافع'],MF:['Midfielder','لاعب وسط'],FW:['Forward','مهاجم']};
+const TEAMS=[
+['nile','#1fbf6a','#063d22',['Nile Falcons','صقور النيل'],['Egypt','مصر'],'d',['3 league titles (sample)','3 ألقاب دوري (عينة)']],
+['atlas','#e0442f','#4a0f08',['Atlas Lions','أسود الأطلس'],['Morocco','المغرب'],'a',['2 league titles (sample)','لقبان في الدوري (عينة)']],
+['gulf','#2f8fe0','#08294a',['Gulf Pearls','لآلئ الخليج'],['Qatar','قطر'],'c',['Cup winners 2021 (sample)','بطل الكأس 2021 (عينة)']],
+['sahara','#f2a81d','#4a2f02',['Sahara Sun','شمس الصحراء'],['Algeria','الجزائر'],'a',['1 league title (sample)','لقب دوري واحد (عينة)']],
+['cedar','#9b59e0','#2b0f4a',['Cedar United','سيدار يونايتد'],['Lebanon','لبنان'],'c',['Cup finalists (sample)','وصيف الكأس (عينة)']],
+['red','#e0306a','#4a0820',['Red Sea Rovers','جوالة البحر الأحمر'],['Saudi Arabia','السعودية'],'d',['4 league titles (sample)','4 ألقاب دوري (عينة)']],
+['carth','#19c2c2','#05393a',['Carthage Stars','نجوم قرطاج'],['Tunisia','تونس'],'a',['Unbeaten 2019 (sample)','موسم 2019 بلا هزيمة (عينة)']],
+['petra','#d9d9d9','#2a2f33',['Petra Knights','فرسان البتراء'],['Jordan','الأردن'],'c',['Rising club (sample)','نادٍ صاعد (عينة)']]
+].map(a=>({id:a[0],c:a[1],c2:a[2],n:a[3],co:a[4],lg:a[5],ach:a[6]}));
+const PLAYERS=[
+['p1','Omar Reda','عمر رضا','nile','FW',['Egypt','مصر'],9,'#c68642',['Quick striker who loves cut-ins from the right.','مهاجم سريع يحب الانطلاق من اليمين.']],
+['p2','Yassine Idrissi','ياسين الإدريسي','atlas','MF',['Morocco','المغرب'],8,'#8d5524',['Creative midfielder with a long passing range.','لاعب وسط مبدع بتمريرات طويلة دقيقة.']],
+['p3','Khalid Nasser','خالد ناصر','gulf','GK',['Qatar','قطر'],1,'#e0ac69',['Reflex shot-stopper and calm distributor.','حارس سريع ردة الفعل وهادئ في بناء اللعب.']],
+['p4','Rayan Mebarki','ريان مباركي','sahara','DF',['Algeria','الجزائر'],4,'#a8703c',['Strong centre-back who wins aerial duels.','قلب دفاع قوي في الكرات الهوائية.']],
+['p5','Elias Haddad','إلياس حداد','cedar','MF',['Lebanon','لبنان'],10,'#f1c27d',['Playmaker known for set-piece delivery.','صانع ألعاب معروف بالكرات الثابتة.']],
+['p6','Faisal Qahtani','فيصل القحطاني','red','FW',['Saudi Arabia','السعودية'],11,'#c68642',['Left-winger with explosive pace.','جناح أيسر بسرعة انفجارية.']],
+['p7','Amine Trabelsi','أمين الطرابلسي','carth','DF',['Tunisia','تونس'],2,'#8d5524',['Attacking full-back who overlaps constantly.','ظهير هجومي يتقدم باستمرار.']],
+['p8','Saeed Majali','سعيد المجالي','petra','MF',['Jordan','الأردن'],6,'#e0ac69',['Tireless ball-winner in midfield.','لاعب ارتكاز لا يتعب في قطع الكرات.']]
+].map(a=>({id:a[0],n:[a[1],a[2]],t:a[3],pos:a[4],nat:a[5],num:a[6],skin:a[7],bio:a[8]}));
+const NEWS=[
+['n1',['Falcons start the season with a statement win','صقور النيل يبدؤون الموسم بفوز لافت'],['Sample story: a fast, high-pressing display set the tone for the new campaign.','خبر تجريبي: أداء سريع بضغط عالٍ يحدد نغمة الموسم الجديد.']],
+['n2',['Young talents to watch this year','مواهب شابة تستحق المتابعة هذا العام'],['Sample story: five fictional prospects who could break through.','خبر تجريبي: خمس مواهب خيالية قد تصنع الفارق.']],
+['n3',['Why set pieces decide tight games','لماذا تحسم الكرات الثابتة المباريات المتقاربة'],['Sample story: a look at corners, free kicks and clever routines.','خبر تجريبي: نظرة على الركنيات والضربات الحرة والتحركات الذكية.']],
+['n4',['Fans fill the stands for the derby','الجماهير تملأ المدرجات في الديربي'],['Sample story: colour, songs and respect between rival supporters.','خبر تجريبي: ألوان وأهازيج واحترام بين جماهير المنافسين.']]
+].map(a=>({id:a[0],t:a[1],s:a[2]}));
+/* d = days from today (negative = past). Scores exist only for past SAMPLE results. */
+const MATCHES=[
+['nile','atlas','d',-6,[2,1]],['gulf','sahara','c',-4,[0,0]],['red','carth','d',-3,[3,2]],['cedar','petra','c',-2,[1,2]],
+['nile','red','d',2,0],['atlas','sahara','a',3,0],['gulf','cedar','c',5,0],['carth','petra','a',7,0],['red','nile','d',12,0]
+].map(a=>({h:a[0],a:a[1],lg:a[2],d:a[3],s:a[4]}));
+const QUIZ=[
+['Which country has won the most men\'s World Cups?',['Brazil','Germany','Italy','Argentina'],0,'أي دولة فازت بأكبر عدد من كؤوس العالم للرجال؟',['البرازيل','ألمانيا','إيطاليا','الأرجنتين']],
+['How many players does each team have on the pitch?',['9','10','11','12'],2,'كم عدد اللاعبين لكل فريق داخل الملعب؟',['9','10','11','12']],
+['Which country won the 2022 World Cup?',['France','Argentina','Croatia','Morocco'],1,'من فاز بكأس العالم 2022؟',['فرنسا','الأرجنتين','كرواتيا','المغرب']],
+['Which African team reached the 2022 World Cup semi-finals?',['Senegal','Ghana','Morocco','Cameroon'],2,'أي منتخب أفريقي بلغ نصف نهائي كأس العالم 2022؟',['السنغال','غانا','المغرب','الكاميرون']],
+['How long is a standard match without extra time?',['80 min','90 min','100 min','120 min'],1,'كم مدة المباراة العادية دون وقت إضافي؟',['80 دقيقة','90 دقيقة','100 دقيقة','120 دقيقة']],
+['Which country hosted the 2022 World Cup?',['Qatar','Russia','Brazil','Japan'],0,'أي دولة استضافت كأس العالم 2022؟',['قطر','روسيا','البرازيل','اليابان']],
+['What is it called when a player scores three goals in one match?',['Brace','Hat-trick','Double','Treble'],1,'ماذا يسمى تسجيل اللاعب ثلاثة أهداف في مباراة واحدة؟',['ثنائية','هاتريك','دبل','ترابل']]
+].map(a=>({q:[a[0],a[3]],o:[a[1],a[4]],a:a[2]}));
+const POLLS=[
+{id:'pl1',q:['Who wins the title this season?','من سيفوز باللقب هذا الموسم؟'],o:[['Nile Falcons','صقور النيل'],['Red Sea Rovers','جوالة البحر الأحمر'],['Atlas Lions','أسود الأطلس']]},
+{id:'pl2',q:['Best part of match day?','أجمل ما في يوم المباراة؟'],o:[['The atmosphere','الأجواء'],['The football','كرة القدم نفسها'],['Time with friends','الوقت مع الأصدقاء']]}];
+
+/* GOAL ZONE auth client: talks to Supabase Auth (GoTrue) and PostgREST over fetch. No library needed.
+   Passwords are only ever sent over HTTPS to Supabase, which hashes them (bcrypt). Nothing secret lives here. */
+(()=>{
+const C=window.GZ_CONFIG||{},B=String(C.SUPABASE_URL||'').replace(/\/+$/,''),K=String(C.SUPABASE_ANON_KEY||'');
+const configured=(/^https:\/\/[^\s/]+\.[^\s/]+/.test(B)||/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(B))&&K.length>20;
+const SK='gz_session';
+const rd=()=>{try{return JSON.parse(sessionStorage.getItem(SK)||localStorage.getItem(SK)||'null')}catch(e){return null}};
+const wr=s=>{try{localStorage.removeItem(SK);sessionStorage.removeItem(SK);if(s)(s.remember?localStorage:sessionStorage).setItem(SK,JSON.stringify(s))}catch(e){}};
+const mk=(d,remember)=>({access_token:d.access_token,refresh_token:d.refresh_token,expires_at:d.expires_at||Math.floor(Date.now()/1000)+(d.expires_in||3600),user:{id:d.user.id,email:d.user.email},remember:!!remember});
+let S=configured?rd():null;
+const redir=()=>/^https?:$/.test(location.protocol)?'redirect_to='+encodeURIComponent(location.origin+location.pathname):'';
+async function req(path,o={}){
+ if(!configured)return{ok:false,code:'not_configured'};
+ let r;try{r=await fetch(B+path,{method:o.method||'GET',headers:Object.assign({apikey:K,'Content-Type':'application/json',Authorization:'Bearer '+(o.token||K)},o.h||{}),body:o.body?JSON.stringify(o.body):undefined})}catch(e){return{ok:false,code:'network'}}
+ let d=null;try{d=await r.json()}catch(e){}
+ if(r.ok)return{ok:true,data:d};
+ const m=String(d&&(d.msg||d.error_description||d.message||d.error)||'').toLowerCase();let code='generic';
+ if(m.includes('invalid login'))code='invalid_credentials';
+ else if(m.includes('not confirmed'))code='email_not_confirmed';
+ else if(m.includes('already registered')||m.includes('already been registered'))code='exists';
+ else if(m.includes('password')&&/(character|weak|short)/.test(m))code='weak_password';
+ else if(r.status===429||m.includes('rate limit')||m.includes('security purposes'))code='rate';
+ else if(m.includes('database error')||m.includes('duplicate'))code='username_taken';
+ return{ok:false,code,status:r.status}}
+async function fresh(){
+ if(!S)return null;if(S.expires_at-60>Date.now()/1000)return S;
+ const r=await req('/auth/v1/token?grant_type=refresh_token',{method:'POST',body:{refresh_token:S.refresh_token}});
+ if(r.ok&&r.data.access_token){S=mk(r.data,S.remember);wr(S);return S}
+ if(r.code==='network')return S;S=null;wr(null);return null}
+async function authed(path,o={}){const s=await fresh();if(!s)return{ok:false,code:'no_session'};return req(path,Object.assign({},o,{token:s.access_token}))}
+window.GZAuth={configured,
+ session:()=>S,
+ async signUp(p){const r=await req('/auth/v1/signup'+(redir()?'?'+redir():''),{method:'POST',body:{email:p.email,password:p.password,data:{username:p.username,avatar:p.avatar,fav_team:p.fav_team||''}}});
+  if(!r.ok)return r;if(r.data&&r.data.access_token){S=mk(r.data,p.remember);wr(S);return{ok:true,session:true}}return{ok:true,session:false}},
+ async signIn(email,password,remember){const r=await req('/auth/v1/token?grant_type=password',{method:'POST',body:{email,password}});if(!r.ok)return r;S=mk(r.data,remember);wr(S);return{ok:true}},
+ async signOut(){const s=S;S=null;wr(null);if(s)await req('/auth/v1/logout',{method:'POST',token:s.access_token})},
+ async getProfile(){const s=await fresh();if(!s)return{ok:false,code:'no_session'};const r=await authed('/rest/v1/profiles?id=eq.'+encodeURIComponent(s.user.id)+'&select=*');if(!r.ok)return r;if(!r.data||!r.data[0])return{ok:false,code:'no_profile'};return{ok:true,data:r.data[0]}},
+ async updateProfile(patch){const s=await fresh();if(!s)return{ok:false,code:'no_session'};const r=await authed('/rest/v1/profiles?id=eq.'+encodeURIComponent(s.user.id),{method:'PATCH',body:patch,h:{Prefer:'return=representation'}});if(!r.ok)return r;if(!r.data||!r.data[0])return{ok:false,code:'generic'};return{ok:true,data:r.data[0]}},
+ recover:email=>req('/auth/v1/recover'+(redir()?'?'+redir():''),{method:'POST',body:{email}}),
+ updatePassword:pw=>authed('/auth/v1/user',{method:'PUT',body:{password:pw}}),
+ /* Handles the tokens Supabase appends to the URL after an email-confirmation or password-recovery link. */
+ async fromHash(){const h=location.hash;if(!/^#(access_token|error)=/.test(h))return null;const q=new URLSearchParams(h.slice(1));history.replaceState(null,'',location.pathname+location.search);
+  if(q.get('error')||!configured)return{type:'error'};const tok=q.get('access_token'),u=await req('/auth/v1/user',{token:tok});if(!u.ok)return{type:'error'};
+  S=mk({access_token:tok,refresh_token:q.get('refresh_token'),expires_in:+q.get('expires_in')||3600,user:u.data},true);wr(S);return{type:q.get('type')||'signup'}}
+};
+})();
+
+(()=>{
+const $=s=>document.querySelector(s);
+const ls={get(k,d){try{const v=JSON.parse(localStorage.getItem('gz_'+k));return v==null?d:v}catch(e){return d}},set(k,v){try{localStorage.setItem('gz_'+k,JSON.stringify(v))}catch(e){}}};
+let L=ls.get('lang',null)||((navigator.language||'').startsWith('ar')?'ar':'en');
+const U={en:{home:'Home',teams:'Teams',players:'Players',matches:'Matches',quiz:'Quiz',fan:'Fan Zone',search:'Search teams or players',go:'Search',skip:'Skip to content',
+demo:'Demonstration data: clubs, players, stories and matches on this site are fictional samples, not real results.',foot:'Fan hub. All content is sample data with original artwork. Be kind to fellow fans.',
+h1a:'Live for',h1b:'the beautiful game',hp:'Teams, players, fixtures, a trivia challenge and a friendly fan zone in English and Arabic.',explore:'Explore teams',play:'Play the quiz',
+news:'Latest headlines',ft:'Featured teams',fp:'Featured players',up:'Upcoming matches',pop:'Popular stories',seeAll:'See all',all:'All',league:'League',pos:'Position',country:'Country',
+view:'View profile',ach:'Achievements',close:'Close',sched:'Scheduled (sample fixture)',fin:'Full time (sample result)',none:'Nothing matches your search. Try fewer letters or reset the filters.',
+favs:'Your favorites',nofav:'No favorites yet. Tap the heart on any team or player.',add:'Add to favorites',rem:'Remove from favorites',res:'Recent results',
+qn:'Question',of:'of',next:'Next question',fin2:'See my score',again:'Play again',right:'Correct!',wrong:'Not quite. The right answer is highlighted.',your:'Your score',best:'Best score on this device',
+m0:'Keep watching, you will get there!',m1:'Nice knowledge, true fan!',m2:'Perfect! Football genius!',polls:'Fan polls',vote:'votes (saved on this device only)',myteam:'My favorite team',choose:'Choose a team',
+disc:'Discussion',ph:'Share your thoughts (max 200 characters, no links)',post:'Post',rules:'Keep it respectful: no insults, no links. Posts are stored only in your browser.',
+bad:'Please keep it friendly: remove offensive words or links and try again.',empty:'Write something first.',sample:'Sample',err:'Something went wrong while loading this page.',retry:'Try again',team:'Team',nat:'Nationality',
+fx:'Fixtures',sr:'Search results',nf:'Page not found',back:'Back to home',pitch:'Home'},
+ar:{home:'الرئيسية',teams:'الفرق',players:'اللاعبون',matches:'المباريات',quiz:'اختبار',fan:'ركن المشجعين',search:'ابحث عن فريق أو لاعب',go:'بحث',skip:'انتقل إلى المحتوى',
+demo:'بيانات تجريبية: الأندية واللاعبون والأخبار والمباريات في هذا الموقع عينات خيالية وليست نتائج حقيقية.',foot:'منصة للمشجعين. كل المحتوى بيانات تجريبية بتصاميم أصلية. كن لطيفاً مع المشجعين.',
+h1a:'نعيش من أجل',h1b:'اللعبة الجميلة',hp:'فرق ولاعبون ومباريات وتحدي معلومات وركن ودود للمشجعين بالعربية والإنجليزية.',explore:'استكشف الفرق',play:'ابدأ الاختبار',
+news:'آخر العناوين',ft:'فرق مميزة',fp:'لاعبون مميزون',up:'المباريات القادمة',pop:'قصص رائجة',seeAll:'عرض الكل',all:'الكل',league:'الدوري',pos:'المركز',country:'الدولة',
+view:'عرض الملف',ach:'الإنجازات',close:'إغلاق',sched:'مجدولة (مباراة تجريبية)',fin:'انتهت (نتيجة تجريبية)',none:'لا توجد نتائج مطابقة. جرّب كلمات أقل أو أعد ضبط الفلاتر.',
+favs:'مفضلتك',nofav:'لا توجد مفضلات بعد. اضغط على القلب في أي فريق أو لاعب.',add:'أضف إلى المفضلة',rem:'إزالة من المفضلة',res:'آخر النتائج',
+qn:'السؤال',of:'من',next:'السؤال التالي',fin2:'اعرض نتيجتي',again:'العب مجدداً',right:'إجابة صحيحة!',wrong:'ليس تماماً. الإجابة الصحيحة مظللة.',your:'نتيجتك',best:'أفضل نتيجة على هذا الجهاز',
+m0:'واصل المتابعة وستصل!',m1:'معلومات رائعة، مشجع حقيقي!',m2:'ممتاز! عبقري كرة القدم!',polls:'استطلاعات المشجعين',vote:'أصوات (محفوظة على هذا الجهاز فقط)',myteam:'فريقي المفضل',choose:'اختر فريقاً',
+disc:'النقاش',ph:'شاركنا رأيك (حتى 200 حرف، دون روابط)',post:'نشر',rules:'حافظ على الاحترام: لا إساءات ولا روابط. المنشورات تُحفظ في متصفحك فقط.',
+bad:'يرجى الحفاظ على اللطف: احذف الألفاظ المسيئة أو الروابط وحاول مجدداً.',empty:'اكتب شيئاً أولاً.',sample:'تجريبي',err:'حدث خطأ أثناء تحميل الصفحة.',retry:'حاول مرة أخرى',team:'الفريق',nat:'الجنسية',
+fx:'المواعيد',sr:'نتائج البحث',nf:'الصفحة غير موجودة',back:'العودة للرئيسية',pitch:'الرئيسية'}};
+const t=k=>U[L][k]||k,p=a=>a[L==='ar'?1:0],esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const TM=id=>TEAMS.find(x=>x.id===id),main=$('#main');
+/* ---------- original generated artwork ---------- */
+const crest=(m,s=48)=>`<svg width="${s}" height="${s*1.15}" viewBox="0 0 48 56" role="img" aria-label="${esc(p(m.n))}"><path d="M4 4h40v28c0 12-12 20-20 22C16 52 4 44 4 32z" fill="${m.c2}" stroke="${m.c}" stroke-width="3"/><path d="M4 24h40" stroke="${m.c}" stroke-width="6"/><text x="24" y="20" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="14" fill="#fff">${m.n[0].split(' ').map(w=>w[0]).join('').slice(0,2)}</text></svg>`;
+const rnd=s=>{let x=0;for(const c of s)x=(x*31+c.charCodeAt(0))>>>0;return()=>((x=(x*1664525+1013904223)>>>0)/4294967296)};
+const ball=(x,y,r)=>`<g transform="translate(${x} ${y}) scale(${r/20})"><circle r="20" fill="#fff"/><path d="M0-9l8.5 6-3.2 10h-10.6l-3.2-10z" fill="#151515"/><path d="M0-9V-20M8.5-3L19-6M5.3 7L12 16M-5.3 7L-12 16M-8.5-3L-19-6" stroke="#151515" stroke-width="1.6"/></g>`;
+const pat=(i,c)=>{let s='';const f=`fill="${c}" opacity=".2"`;
+if(i==0)for(let x=0;x<320;x+=40)s+=`<rect x="${x}" width="20" height="240" ${f}/>`;
+else if(i==1)for(let y=0;y<240;y+=40)s+=`<rect y="${y}" width="320" height="20" ${f}/>`;
+else if(i==2)s=`<path d="M-20 60L100-20h70L-20 150zM60 260L340 60v90L200 260z" ${f}/>`;
+else if(i==3)for(let y=-20;y<260;y+=50)s+=`<path d="M0 ${y}l160 40 160-40v25l-160 40-160-40z" ${f}/>`;
+else if(i==4){for(let x=0;x<320;x+=40)for(let y=0;y<240;y+=40)if((x+y)/40%2==0)s+=`<rect x="${x}" y="${y}" width="40" height="40" ${f}/>`}
+else if(i==5){for(let x=20;x<340;x+=50)for(let y=20;y<200;y+=50)s+=`<circle cx="${x+(y/50%2)*25}" cy="${y}" r="7" ${f}/>`}
+else if(i==6)for(let y=20;y<240;y+=36)s+=`<path d="M0 ${y}q40-24 80 0t80 0 80 0 80 0" fill="none" stroke="${c}" stroke-width="8" opacity=".25"/>`;
+else{for(let x=0;x<340;x+=60)for(let y=0;y<260;y+=60)s+=`<rect x="${x-12}" y="${y-12}" width="24" height="24" transform="rotate(45 ${x} ${y})" ${f}/>`}
+return s};
+const teamArt=m=>{const i=TEAMS.indexOf(m),r=rnd(m.id);let crowd='';for(let k=0;k<80;k++){const x=r()*320,y=150+r()*34-Math.abs(x-160)*.2;crowd+=`<circle cx="${x|0}" cy="${y|0}" r="2.6" fill="${r()>.5?m.c:'#fff'}" opacity=".55"/>`}
+return `<svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="g${m.id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${m.c2}"/><stop offset="1" stop-color="#04100a"/></linearGradient></defs><rect width="320" height="240" fill="url(#g${m.id})"/>${pat(i,m.c)}<path d="M20 0L90 150H40zM300 0L230 150h50z" fill="#fff" opacity=".08"/><path d="M-10 200C40 130 280 130 330 200V240H-10z" fill="#000" opacity=".35"/>${crowd}<rect y="196" width="320" height="44" fill="#0d3a22"/>${[0,1,2,3,4,5].map(k=>`<rect x="${k*60}" y="196" width="30" height="44" fill="#fff" opacity=".05"/>`).join('')}<circle cx="160" cy="100" r="62" fill="${m.c}" opacity=".2"/><g transform="translate(110 38) scale(2.1)">${crest(m,1).replace(/<svg[^>]*>|<\/svg>/g,'')}</g></svg>`};
+const avatar=m=>{const tm=TM(m.t),n=+m.id.slice(1),r=rnd(m.id),gk=m.pos==='GK',kit=gk?'#f2c230':tm.c,kit2=gk?'#8a6b00':tm.c2,hc=['#1b1209','#2b1a0e','#3a2412','#0d0d0d'][n%4],hs=n%3;let bk='';for(let k=0;k<14;k++)bk+=`<circle cx="${r()*320|0}" cy="${r()*110|0}" r="${3+r()*7|0}" fill="#fff" opacity="${.05+r()*.12}"/>`;
+const hair=hs==0?`<path d="M120 94C116 52 204 52 200 94 190 74 130 74 120 94z" fill="${hc}"/>`:hs==1?[0,1,2,3,4].map(k=>`<circle cx="${124+k*18}" cy="${70-(k%2)*4}" r="16" fill="${hc}"/>`).join('')+`<path d="M121 90C121 70 199 70 199 90z" fill="${hc}"/>`:`<path d="M121 90C121 60 199 60 199 90 192 80 128 80 121 90z" fill="${hc}"/><path d="M121 90v14M199 90v14" stroke="${hc}" stroke-width="5"/>`;
+return `<svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${esc(p(m.n))}"><defs><linearGradient id="a${m.id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${tm.c2}"/><stop offset="1" stop-color="#04100a"/></linearGradient><radialGradient id="r${m.id}"><stop offset="0" stop-color="${tm.c}" stop-opacity=".6"/><stop offset="1" stop-color="${tm.c}" stop-opacity="0"/></radialGradient></defs><rect width="320" height="240" fill="url(#a${m.id})"/>${bk}<path d="M30 0L70 130H20zM290 0L250 130h50z" fill="#fff" opacity=".08"/><circle cx="160" cy="100" r="105" fill="url(#r${m.id})"/><text x="262" y="96" text-anchor="end" font-family="Arial Black,Impact" font-size="64" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="2">${m.num}</text>
+<path d="M44 240C44 176 98 150 160 150s116 26 116 90z" fill="${kit}"/>${[0,1,2,3,4,5,6].map(k=>`<rect x="${52+k*32}" y="150" width="14" height="90" fill="${kit2}" opacity=".35"/>`).join('')}<path d="M44 240C44 190 60 172 84 162L72 240zM276 240c0-50-16-68-40-78l12 78z" fill="#000" opacity=".12"/>
+<rect x="144" y="124" width="32" height="38" rx="12" fill="${m.skin}"/><rect x="144" y="124" width="32" height="14" fill="#000" opacity=".15"/><path d="M130 156l30 32 30-32" fill="#fff" fill-opacity=".15" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+<ellipse cx="121" cy="100" rx="7" ry="11" fill="${m.skin}"/><ellipse cx="199" cy="100" rx="7" ry="11" fill="${m.skin}"/><ellipse cx="160" cy="98" rx="39" ry="46" fill="${m.skin}"/><path d="M160 52a39 46 0 0 1 0 92c28-8 36-50 0-92z" fill="#000" opacity=".12"/>${hair}${n%2?`<path d="M123 104C125 142 195 142 197 104 190 124 130 124 123 104z" fill="${hc}" opacity=".92"/>`:''}
+<ellipse cx="146" cy="98" rx="6" ry="4" fill="#fff"/><ellipse cx="174" cy="98" rx="6" ry="4" fill="#fff"/><circle cx="146" cy="98" r="2.8" fill="#1a1a1a"/><circle cx="174" cy="98" r="2.8" fill="#1a1a1a"/><path d="M138 88h16M166 88h16" stroke="${hc}" stroke-width="3" stroke-linecap="round"/><path d="M160 100v12h-5" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="2.5"/><path d="M148 121q12 7 24 0" fill="none" stroke="#5a2d1a" stroke-width="3" stroke-linecap="round"/>
+<text x="160" y="214" text-anchor="middle" font-family="Arial Black,Impact" font-size="26" fill="#fff" opacity=".92">${m.num}</text>${gk?`<circle cx="38" cy="204" r="18" fill="#2bff88"/><circle cx="282" cy="204" r="20" fill="#2bff88"/>`:ball(44,200,22)}</svg>`};
+const newsArt=(n,i)=>{const k=i%4,id='n'+i,sky=['#0b3d2a','#3a2a07','#0a2a4a','#2b0f3a'][k],r=rnd(n.id);let s='';
+if(k==0)s=`<g stroke="#fff" stroke-opacity=".3">${[...Array(13)].map((_,x)=>`<path d="M${70+x*15} 40V130"/>`).join('')}${[...Array(7)].map((_,y)=>`<path d="M70 ${40+y*15}H250"/>`).join('')}</g><path d="M60 140V36h200v104" fill="none" stroke="#fff" stroke-width="6"/>${ball(170,112,16)}`;
+else if(k==1)s=`<path d="M40 128c0-30 20-42 46-42l12 24 44 10c14 4 16 22-4 22H48c-8 0-8-14-8-14z" fill="#ff7a00"/><path d="M40 140h100" stroke="#fff" stroke-width="5"/><path d="M60 152v8M82 152v8M104 152v8M126 152v8" stroke="#ddd" stroke-width="5"/><path d="M180 110c0-24 16-32 36-32l10 20 34 8c10 3 12 18-4 18h-70c-6 0-6-11-6-11z" fill="#2bff88" transform="translate(30 6)"/>${ball(150,138,22)}`;
+else if(k==2)s=`<path d="M100 150V40" stroke="#fff" stroke-width="5"/><path d="M100 40l46 16-46 16z" fill="#ffe14d"/><path d="M100 100a50 50 0 0 1 50 50" fill="none" stroke="#fff" stroke-width="3"/>${ball(220,146,14)}`;
+else{for(let y=0;y<5;y++)for(let x=0;x<16;x++)s+=`<circle cx="${x*22+(y%2)*11}" cy="${60+y*24}" r="8" fill="${['#f4d3a8','#c68642','#8d5524','#e0ac69'][r()*4|0]}"/><rect x="${x*22+(y%2)*11-8}" y="${68+y*24}" width="16" height="12" fill="${['#2bff88','#fff','#ffe14d','#e0442f'][r()*4|0]}" opacity=".85"/>`;s+=`<circle cx="160" cy="50" r="46" fill="#ff7a00" opacity=".45"/><circle cx="160" cy="50" r="20" fill="#ffd54d" opacity=".8"/>`}
+return `<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${sky}"/><stop offset="1" stop-color="#04100a"/></linearGradient></defs><rect width="320" height="180" fill="url(#${id})"/>${[0,1,2].map(q=>`<circle cx="${40+q*120}" cy="16" r="5" fill="#fff" opacity=".8"/>`).join('')}${s}${k==3?'':`<rect y="150" width="320" height="30" fill="#0d3a22"/>${[0,1,2,3,4].map(q=>`<rect x="${q*70}" y="150" width="35" height="30" fill="#fff" opacity=".05"/>`).join('')}`}</svg>`};
+const heroArt=`<svg class="art" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M700 0L540 520h180zM1010 0L900 520h300z" fill="#fff" opacity=".05"/><g fill="none" stroke="#2bff88" stroke-width="3" opacity=".4"><rect x="500" y="40" width="660" height="440"/><path d="M830 40v440"/><circle cx="830" cy="260" r="80"/><rect x="500" y="170" width="110" height="180"/><rect x="1050" y="170" width="110" height="180"/></g><g opacity=".4">${ball(830,260,70)}</g></svg>`;
+/* ---------- helpers ---------- */
+const favs=()=>ls.get('favs',[]);
+const heart=k=>{const on=favs().includes(k);return `<button class="fav" data-fav="${k}" aria-pressed="${on}" aria-label="${t(on?'rem':'add')}">${on?'♥':'♡'}</button>`};
+const teamCard=m=>`<article class="card"><a class="im" href="#" data-open="t:${m.id}" aria-label="${esc(p(m.n))}">${teamArt(m)}</a>${heart('t:'+m.id)}<div class="bd"><h3>${p(m.n)}</h3><p>${p(m.co)}</p><span class="tag">${p(LG[m.lg])}</span></div></article>`;
+const playerCard=m=>`<article class="card"><a class="im" href="#" data-open="p:${m.id}" aria-label="${esc(p(m.n))}">${avatar(m)}</a>${heart('p:'+m.id)}<div class="bd"><h3>${p(m.n)}</h3><p>${p(TM(m.t).n)}</p><span class="tag">${p(POS[m.pos])}</span><span class="tag">${p(m.nat)}</span></div></article>`;
+const dt=d=>new Date(Date.now()+d*864e5).toLocaleDateString(L==='ar'?'ar-u-nu-latn':'en-GB',{weekday:'short',day:'numeric',month:'short'});
+const matchRow=(m,i)=>{const h=TM(m.h),a=TM(m.a),past=m.d<0;return `<div class="match"><div class="tm">${crest(h,36)}${p(h.n)}</div><div class="mid">${past?`<div class="sc">${m.s[0]} - ${m.s[1]}</div>`:`<div class="sc">vs</div>`}<div class="st">${dt(m.d)}${past?'':', '+(17+i%3*2)+':00'}<br>${t(past?'fin':'sched')}<br>${p(LG[m.lg])}</div></div><div class="tm">${crest(a,36)}${p(a.n)}</div></div>`};
+const newsCard=(n,i)=>{const on=ls.get('saved',[]).includes(n.id);return `<article class="card"><a class="im" href="#" data-open="n:${n.id}" aria-label="${esc(p(n.t))}">${newsArt(n,i)}</a><button class="fav" data-save="${n.id}" aria-pressed="${on}" aria-label="${t(on?'unsave':'saveArt')}">${on?'★':'☆'}</button><div class="bd"><span class="tag">${t('sample')}</span><h3>${p(n.t)}</h3><p>${p(n.s)}</p></div></article>`};
+const head=(h,l)=>`<div class="head"><h2>${h}</h2>${l?`<a class="btn ghost" href="#/${l}">${t('seeAll')}</a>`:''}</div>`;
+const opts=(arr,all)=>`<option value="">${all}</option>`+arr.map(x=>`<option value="${x[0]}">${x[1]}</option>`).join('');
+let upd=null;
+/* ---------- pages ---------- */
+const P={
+home(){const up=MATCHES.filter(m=>m.d>0).slice(0,3);return `<section class="hero">${heroArt}<div class="wrap"><h1>${t('h1a')}<em>${t('h1b')}</em></h1><p>${t('hp')}</p><div class="row"><a class="btn" href="#/teams">${t('explore')}</a><a class="btn ghost" href="#/quiz">${t('play')}</a></div></div></section>
+<div class="wrap"><section>${head(t('news'))}<div class="news">${NEWS.slice(0,3).map(newsCard).join('')}</div></section>
+<section>${head(t('ft'),'teams')}<div class="grid">${TEAMS.slice(0,4).map(teamCard).join('')}</div></section>
+<section>${head(t('fp'),'players')}<div class="grid">${PLAYERS.slice(0,4).map(playerCard).join('')}</div></section>
+<section>${head(t('up'),'matches')}${up.map(matchRow).join('')}</section>
+<section>${head(t('pop'))}<div class="grid">${NEWS.slice(1).map((n,i)=>newsCard(n,i+1)).join('')}</div></section></div>`},
+teams(){upd=()=>{const q=$('#tq').value.toLowerCase(),l=$('#tl').value,c=$('#tc').value;const r=TEAMS.filter(m=>(!q||m.n.join(' ').toLowerCase().includes(q))&&(!l||m.lg===l)&&(!c||m.co[0]===c));$('#res').innerHTML=r.length?r.map(teamCard).join(''):`<p>${t('none')}</p>`};
+return `<div class="wrap"><section>${head(t('teams'))}<div class="tools"><input id="tq" data-f type="search" placeholder="${t('search')}" aria-label="${t('search')}"><select id="tl" data-f aria-label="${t('league')}">${opts(Object.entries(LG).map(([k,v])=>[k,p(v)]),t('league'))}</select><select id="tc" data-f aria-label="${t('country')}">${opts([...new Set(TEAMS.map(m=>m.co[0]))].map(c=>[c,p(TEAMS.find(m=>m.co[0]===c).co)]),t('country'))}</select></div><div class="grid" id="res">${TEAMS.map(teamCard).join('')}</div></section></div>`},
+players(){upd=()=>{const q=$('#pq').value.toLowerCase(),s=$('#ps').value;const r=PLAYERS.filter(m=>(!q||m.n.join(' ').toLowerCase().includes(q))&&(!s||m.pos===s));$('#res').innerHTML=r.length?r.map(playerCard).join(''):`<p>${t('none')}</p>`};
+return `<div class="wrap"><section>${head(t('players'))}<div class="tools"><input id="pq" data-f type="search" placeholder="${t('search')}" aria-label="${t('search')}"><select id="ps" data-f aria-label="${t('pos')}">${opts(Object.entries(POS).map(([k,v])=>[k,p(v)]),t('pos'))}</select></div><div class="grid" id="res">${PLAYERS.map(playerCard).join('')}</div></section></div>`},
+matches(){upd=()=>{const l=$('#ml').value,r=MATCHES.filter(m=>!l||m.lg===l);const f=r.filter(m=>m.d>0),z=r.filter(m=>m.d<0).reverse();$('#res').innerHTML=`<h3>${t('fx')}</h3>${f.map(matchRow).join('')||`<p>${t('none')}</p>`}<h3>${t('res')}</h3>${z.map(matchRow).join('')||`<p>${t('none')}</p>`}`};
+return `<div class="wrap"><section>${head(t('matches'))}<div class="tools"><select id="ml" data-f aria-label="${t('league')}">${opts(Object.entries(LG).map(([k,v])=>[k,p(v)]),t('all'))}</select></div><div id="res"></div></section></div>`},
+quiz(){const q=qz,Q=QUIZ[q.i];
+if(q.done){const best=Math.max(q.s,ls.get('best',0));ls.set('best',best);return `<div class="wrap"><section><div class="box" style="text-align:center"><h2>${t('your')}</h2><div class="bigscore">${q.s}/${QUIZ.length}</div><div class="bar2"><i style="width:${q.s/QUIZ.length*100}%"></i></div><p>${t(q.s>=QUIZ.length-1?'m2':q.s>=QUIZ.length/2?'m1':'m0')}</p><p>${t('best')}: ${best}/${QUIZ.length}</p><button data-again>${t('again')}</button></div></section></div>`}
+return `<div class="wrap"><section>${head(t('quiz'))}<div class="box"><p>${t('qn')} ${q.i+1} ${t('of')} ${QUIZ.length}</p><div class="bar2"><i style="width:${q.i/QUIZ.length*100}%"></i></div><h3>${p(Q.q)}</h3>${p(Q.o).map((o,i)=>`<button class="opt ${q.a==null?'':i===Q.a?'ok':i===q.a?'no':''}" data-ans="${i}" ${q.a==null?'':'disabled'}>${esc(o)}</button>`).join('')}${q.a==null?'':`<p role="status">${t(q.a===Q.a?'right':'wrong')}</p><button data-next>${t(q.i===QUIZ.length-1?'fin2':'next')}</button>`}</div></section></div>`},
+fan(){const v=ls.get('votes',{}),ft=ls.get('myteam',''),fv=favs(),posts=ls.get('posts',[]);
+return `<div class="wrap"><section>${head(t('fan'))}<div class="box"><h3>${t('myteam')}</h3><div class="row"><select id="mt" style="max-width:280px" aria-label="${t('myteam')}"><option value="">${t('choose')}</option>${TEAMS.map(m=>`<option value="${m.id}" ${m.id===ft?'selected':''}>${esc(p(m.n))}</option>`).join('')}</select>${ft?crest(TM(ft),40):''}</div></div>
+<div class="box"><h3>${t('favs')}</h3>${fv.length?`<div class="grid">${fv.map(k=>{const[a,id]=k.split(':');return a==='t'?teamCard(TM(id)):playerCard(PLAYERS.find(x=>x.id===id))}).join('')}</div>`:`<p>${t('nofav')}</p>`}</div>
+<h2>${t('polls')}</h2>${POLLS.map(o=>{const c=v[o.id]||o.o.map(()=>0),tot=c.reduce((a,b)=>a+b,0)||1;return `<div class="box"><h3>${p(o.q)}</h3>${o.o.map((x,i)=>`<button class="opt" data-vote="${o.id}:${i}">${p(x)}  (${Math.round(c[i]/tot*100)}%)</button><div class="bar2"><i style="width:${c[i]/tot*100}%"></i></div>`).join('')}<p class="st">${tot===1&&!c.some(Boolean)?0:tot} ${t('vote')}</p></div>`}).join('')}
+<h2>${t('disc')}</h2><div class="box"><p class="st">${t('rules')}</p><textarea id="pt" dir="auto" maxlength="200" rows="3" placeholder="${t('ph')}" aria-label="${t('ph')}"></textarea><p id="pm" role="alert" class="st"></p><button data-post>${t('post')}</button>
+<div class="post"><span class="tag">${t('sample')}</span> ${L==='ar'?'ما أجمل أجواء المباريات عندما تحترم الجماهير بعضها!':'Nothing beats match-day atmosphere when rival fans respect each other!'}</div>
+${posts.map(x=>`<div class="post" dir="auto">${esc(x)}</div>`).join('')}</div></section></div>`},
+search(a){const q=(a||'').toLowerCase(),tt=TEAMS.filter(m=>m.n.join(' ').toLowerCase().includes(q)),pp=PLAYERS.filter(m=>m.n.join(' ').toLowerCase().includes(q));
+return `<div class="wrap"><section>${head(t('sr')+': '+esc(a||''))}${tt.length+pp.length?`<div class="grid">${tt.map(teamCard).join('')}${pp.map(playerCard).join('')}</div>`:`<p>${t('none')}</p>`}</section></div>`}
+};
+let qz={i:0,s:0,a:null,done:false};
+/* ---------- accounts (UI layer; API lives in js/auth.js) ---------- */
+const AVS=[['a1','#2bff88','#0a5c33'],['a2','#ffe14d','#6b5400'],['a3','#2f8fe0','#08294a'],['a4','#e0442f','#4a0f08'],['a5','#9b59e0','#2b0f4a'],['a6','#ff7a00','#4a2200'],['a7','#19c2c2','#05393a'],['a8','#e0306a','#4a0820']];
+const ICO={a1:'',a2:'M32 12l5.9 12 13.2 1.9-9.6 9.3 2.3 13.1L32 42.1 20.2 48.3l2.3-13.1-9.6-9.3 13.2-1.9z',a3:'M36 10L18 36h12l-4 18 20-28H34z',a4:'M32 10l16 6v14c0 12-8 19-16 24-8-5-16-12-16-24V16z',a5:'M14 46V22l10 10 8-14 8 14 10-10v24z',a6:'M32 10c2 10 14 14 14 28a14 14 0 0 1-28 0c0-8 4-10 6-16 2 4 4 5 6 4-2-6 0-12 2-16z',a7:'M20 12h24v12a12 12 0 0 1-24 0zM16 14h4v8h-4zM44 14h4v8h-4zM29 36h6v8h-6zM22 46h20v5H22z',a8:'M32 50C14 38 14 22 24 20c4-1 7 1 8 5 1-4 4-6 8-5 10 2 10 18-8 30z'};
+const userAv=(id,s=40)=>{const a=AVS.find(x=>x[0]===id)||AVS[0];return `<svg width="${s}" height="${s}" viewBox="0 0 64 64" role="img" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="${a[2]}" stroke="${a[1]}" stroke-width="3"/>${a[0]==='a1'?ball(32,32,16):`<path d="${ICO[a[0]]}" fill="${a[1]}"/>`}</svg>`};
+Object.assign(U.en,{login:'Log in',signup:'Sign up',logout:'Log out',profile:'My profile',forgot:'Forgot password?',reset:'Reset password',email:'Email',pw:'Password',pw2:'Confirm password',user:'Username',avatar:'Choose your avatar',favteam:'Favorite team',noteam:'No favorite yet',remember:'Remember me',signin:'Sign in',create:'Create account',noacc:'New here?',haveacc:'Already have an account?',joined:'Joined',edit:'Edit profile',cancel:'Cancel',saveCh:'Save changes',savedArt:'Saved articles',favT:'Favorite teams',favP:'Favorite players',dash:'Your dashboard',nextm:'Next match for your team',bestq:'Best quiz score',pwHint:'At least 8 characters',
+cfg:'Accounts are not set up on this site yet. The owner needs to connect a Supabase project (see README). You can still browse everything else.',privacy:'We only collect a username, email, avatar and favorite team. Your password is handled by Supabase Auth and is never stored by this site. Your profile is private to you.',
+eNet:'Could not reach the server. Check your connection and try again.',eCred:'Wrong email or password.',eConf:'Please confirm your email first. Check your inbox for the link.',eExists:'An account with this email already exists. Try logging in.',eWeak:'Password must be at least 8 characters.',ePwMatch:'The passwords do not match.',eEmail:'Please enter a valid email address.',eUserFmt:'Username: 3 to 20 letters, numbers or underscores.',eUser:'That username may already be taken, or the database is not set up yet (see README).',eGen:'Something went wrong. Please try again.',eRate:'Too many attempts. Please wait a minute and try again.',eProf:'Your profile could not be loaded. Has the SQL from the README been run?',eSess:'Your session expired. Please log in again.',ePwEmpty:'Please enter your password.',
+confirmSent:'Almost done! We sent a confirmation link to your email. Open it, then log in.',recoverSent:'If an account exists for that email, a reset link is on its way.',resetTitle:'Choose a new password',resetNone:'This reset link is invalid or expired. Request a new one.',pwUpdated:'Password updated.',welcome:'Welcome,',bye:'You are logged out.',savedOk:'Profile updated.',loginSave:'Log in to save articles.',saveArt:'Save article',unsave:'Remove from saved',syncfail:'Could not sync with your account. Your changes are kept on this device.',read:'Sample story',nonext:'No upcoming sample fixture for your team yet.',emptyArt:'Nothing saved yet. Tap the star on any story.',more:'Browse'});
+Object.assign(U.ar,{login:'تسجيل الدخول',signup:'إنشاء حساب',logout:'تسجيل الخروج',profile:'ملفي',forgot:'نسيت كلمة المرور؟',reset:'استعادة كلمة المرور',email:'البريد الإلكتروني',pw:'كلمة المرور',pw2:'تأكيد كلمة المرور',user:'اسم المستخدم',avatar:'اختر صورتك الرمزية',favteam:'الفريق المفضل',noteam:'لا يوجد فريق مفضل بعد',remember:'تذكرني',signin:'دخول',create:'إنشاء حساب',noacc:'جديد هنا؟',haveacc:'لديك حساب بالفعل؟',joined:'تاريخ الانضمام',edit:'تعديل الملف',cancel:'إلغاء',saveCh:'حفظ التغييرات',savedArt:'المقالات المحفوظة',favT:'الفرق المفضلة',favP:'اللاعبون المفضلون',dash:'لوحتك الشخصية',nextm:'مباراة فريقك القادمة',bestq:'أفضل نتيجة في الاختبار',pwHint:'8 أحرف على الأقل',
+cfg:'الحسابات غير مفعّلة في هذا الموقع بعد. على مالك الموقع ربط مشروع Supabase (راجع README). يمكنك تصفح بقية الموقع بشكل طبيعي.',privacy:'نجمع فقط اسم المستخدم والبريد والصورة الرمزية والفريق المفضل. كلمة المرور تُدار عبر Supabase Auth ولا يخزنها هذا الموقع. ملفك خاص بك وحدك.',
+eNet:'تعذّر الوصول إلى الخادم. تحقق من اتصالك وحاول مجدداً.',eCred:'البريد أو كلمة المرور غير صحيحة.',eConf:'يرجى تأكيد بريدك أولاً. تحقق من صندوق الوارد.',eExists:'يوجد حساب بهذا البريد بالفعل. جرّب تسجيل الدخول.',eWeak:'يجب أن تتكون كلمة المرور من 8 أحرف على الأقل.',ePwMatch:'كلمتا المرور غير متطابقتين.',eEmail:'يرجى إدخال بريد إلكتروني صحيح.',eUserFmt:'اسم المستخدم: من 3 إلى 20 حرفاً أو رقماً أو شرطة سفلية.',eUser:'قد يكون اسم المستخدم محجوزاً، أو أن قاعدة البيانات غير مهيأة بعد (راجع README).',eGen:'حدث خطأ ما. حاول مرة أخرى.',eRate:'محاولات كثيرة. انتظر دقيقة ثم حاول مجدداً.',eProf:'تعذّر تحميل ملفك. هل تم تشغيل SQL المذكور في README؟',eSess:'انتهت الجلسة. سجّل الدخول مجدداً.',ePwEmpty:'يرجى إدخال كلمة المرور.',
+confirmSent:'اقتربت! أرسلنا رابط تأكيد إلى بريدك. افتحه ثم سجّل الدخول.',recoverSent:'إذا كان هناك حساب بهذا البريد فسيصلك رابط الاستعادة.',resetTitle:'اختر كلمة مرور جديدة',resetNone:'رابط الاستعادة غير صالح أو منتهي. اطلب رابطاً جديداً.',pwUpdated:'تم تحديث كلمة المرور.',welcome:'أهلاً،',bye:'تم تسجيل خروجك.',savedOk:'تم تحديث الملف.',loginSave:'سجّل الدخول لحفظ المقالات.',saveArt:'حفظ المقال',unsave:'إزالة من المحفوظات',syncfail:'تعذّرت المزامنة مع حسابك. تغييراتك محفوظة على هذا الجهاز.',read:'خبر تجريبي',nonext:'لا توجد مباراة تجريبية قادمة لفريقك بعد.',emptyArt:'لا شيء محفوظ بعد. اضغط على النجمة في أي خبر.',more:'تصفح'});
+let me=null,editing=false,tt;
+const toast=(m,href,label)=>{const el=$('#toast');el.innerHTML=esc(m)+(href?` <a href="${href}">${esc(label)}</a>`:'');el.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>el.classList.remove('show'),4500)};
+const un=(a,b)=>[...new Set([...(a||[]),...(b||[])])];
+const okF=k=>/^t:/.test(k)?!!TM(k.slice(2)):/^p:/.test(k)&&PLAYERS.some(x=>x.id===k.slice(2));
+const okS=k=>NEWS.some(n=>n.id===k);
+function push(patch){if(!me)return;Object.assign(me,patch);ls.set('profile',me);GZAuth.updateProfile(patch).then(r=>{if(!r.ok)toast(t('syncfail'))})}
+async function loadMe(){const r=await GZAuth.getProfile();
+ if(r.ok){me=Object.assign({},r.data,{email:GZAuth.session().user.email});ls.set('profile',me);
+  const f=un(me.favs,favs()).filter(okF),s=un(me.saved,ls.get('saved',[])).filter(okS);ls.set('favs',f);ls.set('saved',s);ls.set('myteam',me.fav_team||'');
+  if(f.length!==(me.favs||[]).length||s.length!==(me.saved||[]).length)push({favs:f,saved:s})}
+ else if(r.code==='network'&&ls.get('profile',null)&&GZAuth.session())me=ls.get('profile');
+ else{me=null;if(r.code!=='no_session')toast(t(r.code==='no_profile'?'eProf':'eNet'))}
+ navUI();authUI()}
+function navUI(){$('#nav').innerHTML=['home','teams','players','matches','quiz','fan'].map(r=>`<a href="#/${r}" data-r="${r}">${t(r)}</a>`).join('')+(me?`<a class="nav-auth" href="#/profile" data-r="profile">${t('profile')}</a><button class="nav-auth ghost" data-logout>${t('logout')}</button>`:`<a class="nav-auth" href="#/login" data-r="login">${t('login')}</a><a class="nav-auth" href="#/signup" data-r="signup">${t('signup')}</a>`);
+ const r=(location.hash.slice(2)||'home').split('?')[0];document.querySelectorAll('#nav a').forEach(x=>x.classList.toggle('on',x.dataset.r===r))}
+function authUI(){$('#auth').innerHTML=me?`<a class="chip" href="#/profile" aria-label="${t('profile')}">${userAv(me.avatar,34)}<span>${esc(me.username)}</span></a><button class="ghost lo" data-logout>${t('logout')}</button>`:`<a class="btn ghost authbtns" href="#/login">${t('login')}</a><a class="btn authbtns" href="#/signup">${t('signup')}</a>`}
+const teamOpts=sel=>`<option value="">${t('noteam')}</option>`+TEAMS.map(m=>`<option value="${m.id}" ${m.id===sel?'selected':''}>${esc(p(m.n))}</option>`).join('');
+const avPick=sel=>`<fieldset class="avs"><legend>${t('avatar')}</legend><div class="row">${AVS.map((a,i)=>`<label class="avp"><input type="radio" name="avatar" value="${a[0]}" aria-label="Avatar ${i+1}" ${a[0]===sel?'checked':''}>${userAv(a[0],56)}</label>`).join('')}</div></fieldset>`;
+const cfgNote=()=>GZAuth.configured?'':`<div class="warn" role="alert">${t('cfg')}</div>`,dis=()=>GZAuth.configured?'':'disabled';
+const fld=(id,lab,type,ac,extra='')=>`<div class="fld"><label for="${id}">${t(lab)}</label><input id="${id}" name="${id}" type="${type}" autocomplete="${ac}" ${extra}></div>`;
+const shell=(h,body)=>`<div class="wrap"><section><div class="form box"><div class="authart">${newsArt(NEWS[0],0)}</div><h2>${h}</h2>${cfgNote()}${body}</div></section></div>`;
+Object.assign(P,{
+login:()=>shell(t('login'),`<form class="af" id="fl" novalidate>${fld('email','email','email','email','required')}${fld('password','pw','password','current-password','required')}<div class="row spread"><label class="chk"><input type="checkbox" name="remember" checked> ${t('remember')}</label><a class="lnk" href="#/forgot">${t('forgot')}</a></div><p class="msg" role="alert"></p><button type="submit" class="wide" ${dis()}>${t('signin')}</button></form><p>${t('noacc')} <a class="lnk" href="#/signup">${t('create')}</a></p>`),
+signup:()=>shell(t('signup'),`<form class="af" id="fs" novalidate>${fld('username','user','text','username','required maxlength="20"')}${fld('email','email','email','email','required')}${fld('password','pw','password','new-password','required aria-describedby="ph"')}<p id="ph" class="st">${t('pwHint')}</p>${fld('password2','pw2','password','new-password','required')}${avPick('a1')}<div class="fld"><label for="fav_team">${t('favteam')}</label><select id="fav_team" name="fav_team">${teamOpts('')}</select></div><p class="st">${t('privacy')}</p><p class="msg" role="alert"></p><button type="submit" class="wide" ${dis()}>${t('create')}</button></form><p>${t('haveacc')} <a class="lnk" href="#/login">${t('login')}</a></p>`),
+forgot:()=>shell(t('reset'),`<form class="af" id="ff" novalidate>${fld('email','email','email','email','required')}<p class="msg" role="alert"></p><button type="submit" class="wide" ${dis()}>${t('reset')}</button></form><p><a class="lnk" href="#/login">${t('login')}</a></p>`),
+reset:()=>GZAuth.session()?shell(t('resetTitle'),`<form class="af" id="fr" novalidate>${fld('password','pw','password','new-password','required')}<p class="st">${t('pwHint')}</p>${fld('password2','pw2','password','new-password','required')}<p class="msg" role="alert"></p><button type="submit" class="wide">${t('saveCh')}</button></form>`):shell(t('reset'),`<p>${t('resetNone')}</p><a class="btn" href="#/forgot">${t('forgot')}</a>`),
+profile(){const fv=ls.get('favs',[]),sv=ls.get('saved',[]),ft=fv.filter(k=>/^t:/.test(k)).map(k=>TM(k.slice(2))).filter(Boolean),fp=fv.filter(k=>/^p:/.test(k)).map(k=>PLAYERS.find(x=>x.id===k.slice(2))).filter(Boolean),sa=NEWS.filter(n=>sv.includes(n.id)),my=me.fav_team?TM(me.fav_team):null,nm=my&&MATCHES.filter(m=>m.d>0&&(m.h===my.id||m.a===my.id)).sort((a,b)=>a.d-b.d)[0];
+const sec=(h,arr,fn,empty,link)=>`<section>${head(h)}${arr.length?`<div class="grid">${arr.map(fn).join('')}</div>`:`<p>${empty} <a class="lnk" href="#/${link}">${t('more')}</a></p>`}</section>`;
+return `<div class="wrap"><section><div class="box"><div class="prof"><span class="bigav">${userAv(me.avatar,96)}</span><div class="grow"><h2>${esc(me.username)}</h2><p class="st">${esc(me.email||'')}</p><p>${my?`${crest(my,22)} ${esc(p(my.n))}`:t('noteam')}</p><p class="st">${t('joined')}: ${new Date(me.created_at).toLocaleDateString(L==='ar'?'ar-u-nu-latn':'en-GB',{year:'numeric',month:'long',day:'numeric'})}</p></div><div class="row"><button data-editp>${t('edit')}</button><button class="ghost" data-logout>${t('logout')}</button></div></div>
+${editing?`<form class="af editf" id="fe" novalidate>${fld('username','user','text','username',`value="${esc(me.username)}" maxlength="20"`)}${avPick(me.avatar)}<div class="fld"><label for="fav_team">${t('favteam')}</label><select id="fav_team" name="fav_team">${teamOpts(me.fav_team||'')}</select></div><p class="msg" role="alert"></p><div class="row"><button type="submit">${t('saveCh')}</button><button type="button" class="ghost" data-editp>${t('cancel')}</button></div></form>`:''}</div></section>
+<section>${head(t('dash'))}<div class="stats"><div class="stat"><b>${ft.length}</b>${t('favT')}</div><div class="stat"><b>${fp.length}</b>${t('favP')}</div><div class="stat"><b>${sa.length}</b>${t('savedArt')}</div><div class="stat"><b>${ls.get('best',0)}/${QUIZ.length}</b>${t('bestq')}</div></div></section>
+<section>${head(t('nextm'),'matches')}${nm?matchRow(nm,0):`<p>${t('nonext')}</p>`}</section>
+${sec(t('favT'),ft,teamCard,t('nofav'),'teams')}${sec(t('favP'),fp,playerCard,t('nofav'),'players')}${sec(t('savedArt'),sa,n=>newsCard(n,NEWS.indexOf(n)),t('emptyArt'),'home')}</div>`}});
+const E={invalid_credentials:'eCred',email_not_confirmed:'eConf',network:'eNet',rate:'eRate',exists:'eExists',weak_password:'eWeak',username_taken:'eUser',not_configured:'cfg',no_profile:'eProf',no_session:'eSess'};
+const EM=/^[^\s@]+@[^\s@]+\.[^\s@]+$/,UNR=/^[\w\u0621-\u064A]{3,20}$/;
+document.addEventListener('submit',async e=>{const f=e.target;if(!f.classList.contains('af'))return;e.preventDefault();
+ const msg=f.querySelector('.msg'),btn=f.querySelector('[type=submit]'),g=n=>f.elements[n]?f.elements[n].value:'',say=(k,ok)=>{msg.textContent=t(k);msg.className='msg'+(ok?' okm':'')},fail=r=>say(E[r.code]||'eGen'),busy=b=>{btn.dataset.l=btn.dataset.l||btn.textContent;btn.disabled=b;btn.textContent=b?'…':btn.dataset.l};
+ if(!GZAuth.configured)return say('cfg');const id=f.id;busy(true);
+ try{
+  if(id==='fl'){const em=g('email').trim();if(!EM.test(em))return say('eEmail');if(!g('password'))return say('ePwEmpty');const r=await GZAuth.signIn(em,g('password'),f.elements.remember.checked);if(!r.ok)return fail(r);await loadMe();if(me){location.hash='#/profile';toast(t('welcome')+' '+me.username)}else say('eProf')}
+  else if(id==='fs'){const u=g('username').trim(),em=g('email').trim(),pw=g('password');if(!UNR.test(u))return say('eUserFmt');if(!EM.test(em))return say('eEmail');if(pw.length<8)return say('eWeak');if(pw!==g('password2'))return say('ePwMatch');
+   const r=await GZAuth.signUp({email:em,password:pw,username:u,avatar:g('avatar')||'a1',fav_team:g('fav_team'),remember:true});if(!r.ok)return fail(r);
+   if(r.session){await loadMe();if(me){location.hash='#/profile';toast(t('welcome')+' '+me.username)}else say('eProf')}else{f.reset();say('confirmSent',1)}}
+  else if(id==='ff'){const em=g('email').trim();if(!EM.test(em))return say('eEmail');const r=await GZAuth.recover(em);if(!r.ok)return fail(r);say('recoverSent',1)}
+  else if(id==='fr'){const pw=g('password');if(pw.length<8)return say('eWeak');if(pw!==g('password2'))return say('ePwMatch');const r=await GZAuth.updatePassword(pw);if(!r.ok)return fail(r);await loadMe();location.hash='#/profile';toast(t('pwUpdated'))}
+  else if(id==='fe'){const u=g('username').trim();if(!UNR.test(u))return say('eUserFmt');const r=await GZAuth.updateProfile({username:u,avatar:g('avatar')||'a1',fav_team:g('fav_team')||null});if(!r.ok)return fail(r);
+   me=Object.assign({},me,r.data);ls.set('profile',me);ls.set('myteam',me.fav_team||'');editing=false;authUI();rerender();toast(t('savedOk'))}
+ }catch(err){console.error(err);say('eGen')}finally{busy(false)}});
+async function logout(){await GZAuth.signOut();me=null;editing=false;['favs','saved','myteam','profile'].forEach(k=>{try{localStorage.removeItem('gz_'+k)}catch(e){}});navUI();authUI();const same=(location.hash||'#/home')==='#/home';location.hash='#/home';toast(t('bye'));if(same)route()}
+async function authHash(){const h=await GZAuth.fromHash();if(h&&h.type==='recovery')history.replaceState(null,'',location.pathname+location.search+'#/reset');else if(h)history.replaceState(null,'',location.pathname+location.search+'#/'+(h.type==='error'?'login':'profile'));if(GZAuth.session())await loadMe()}
+async function boot(){ui();main.innerHTML='<div class="wrap" aria-busy="true"><div class="sk"></div><div class="sk"></div></div>';
+ await authHash();if(!GZAuth.session())ls.set('profile',null);navUI();authUI();route()}
+
+/* ---------- router ---------- */
+const TITLES={home:'GOAL ZONE | Football fan hub',teams:'Teams',players:'Players',matches:'Matches',quiz:'Football Quiz',fan:'Fan Zone',search:'Search'};
+function route(){upd=null;const[r,a]=(location.hash.slice(2)||'home').split('?');const f=P[r];
+if(r==='profile'&&!me){location.replace('#/login');return}
+if((r==='login'||r==='signup')&&me){location.replace('#/profile');return}
+$('#nav').classList.remove('open');$('#burger').setAttribute('aria-expanded','false');
+document.querySelectorAll('#nav a').forEach(x=>x.classList.toggle('on',x.dataset.r===r));
+document.title=r==='home'?TITLES.home:`${t(r)} | GOAL ZONE`;
+if(!f){main.innerHTML=`<div class="wrap"><section><h2>${t('nf')}</h2><a class="btn" href="#/home">${t('back')}</a></section></div>`;return}
+main.innerHTML='<div class="wrap" aria-busy="true"><div class="sk"></div><div class="sk"></div></div>';
+setTimeout(()=>{try{main.innerHTML=f(a?decodeURIComponent(a.replace(/^q=/,'')):'');if(upd)upd();window.scrollTo(0,0)}catch(e){console.error(e);main.innerHTML=`<div class="wrap"><section><div class="err"><p>${t('err')}</p><button data-retry>${t('retry')}</button></div></section></div>`}},220)}
+function ui(){document.documentElement.lang=L;document.documentElement.dir=L==='ar'?'rtl':'ltr';$('#lang').textContent=L==='ar'?'EN':'AR';$('#lang').setAttribute('aria-label',L==='ar'?'English':'العربية');
+navUI();authUI();
+document.querySelectorAll('[data-i]').forEach(e=>e.textContent=t(e.dataset.i));$('#q').placeholder=t('search')}
+/* ---------- events ---------- */
+function modal(k){if(k.startsWith('n:')){const n=NEWS.find(x=>x.id===k.slice(2)),i=NEWS.indexOf(n),on=ls.get('saved',[]).includes(n.id),d=document.createElement('div');d.className='modal';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');d.innerHTML=`<div class="box"><div class="card"><span class="im">${newsArt(n,i)}</span></div><h2>${p(n.t)}</h2><span class="tag">${t('read')}</span><p>${p(n.s)}</p><div class="row"><button data-save="${n.id}" aria-pressed="${on}">${on?'★':'☆'} ${t(on?'unsave':'saveArt')}</button><button class="ghost" data-close>${t('close')}</button></div></div>`;document.body.appendChild(d);d.querySelector('button').focus();return}
+const[a,id]=k.split(':');const m=a==='t'?TM(id):PLAYERS.find(x=>x.id===id);const body=a==='t'?`<div class="row">${crest(m,64)}<div><h2>${p(m.n)}</h2><span class="tag">${p(m.co)}</span><span class="tag">${p(LG[m.lg])}</span></div></div><h3>${t('ach')}</h3><p>${p(m.ach)}</p>`:`<div class="card"><span class="im">${avatar(m)}</span></div><h2>${p(m.n)}</h2><p><span class="tag">${p(POS[m.pos])}</span><span class="tag">${t('nat')}: ${p(m.nat)}</span><span class="tag">${t('team')}: ${p(TM(m.t).n)}</span></p><p>${p(m.bio)}</p><p class="st">${t('sample')}</p>`;
+const d=document.createElement('div');d.className='modal';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');d.innerHTML=`<div class="box">${body}<button data-close>${t('close')}</button></div>`;document.body.appendChild(d);d.querySelector('button').focus()}
+const BAD=/(http|www\.|\.com|idiot|stupid|hate|kill|غبي|حمار|كلب|اقتل)/i;
+document.addEventListener('click',e=>{const x=e.target.closest('[data-logout],[data-editp],[data-save],[data-open],[data-fav],[data-ans],[data-next],[data-again],[data-vote],[data-post],[data-retry],[data-close],.modal');if(!x)return;
+if(x.classList.contains('modal')&&e.target===x)return x.remove();
+if(x.dataset.logout!==undefined)return logout();
+if(x.dataset.editp!==undefined){editing=!editing;return rerender()}
+if(x.dataset.save){if(!me)return toast(t('loginSave'),'#/login',t('login'));const k=x.dataset.save;let sv=ls.get('saved',[]);sv=sv.includes(k)?sv.filter(i=>i!==k):[...sv,k];ls.set('saved',sv);push({saved:sv});const on=sv.includes(k);x.setAttribute('aria-pressed',on);x.textContent=(x.classList.contains('fav')?'':on?'★ ':'☆ ')+(x.classList.contains('fav')?(on?'★':'☆'):t(on?'unsave':'saveArt'));x.setAttribute('aria-label',t(on?'unsave':'saveArt'));if(location.hash.startsWith('#/profile'))rerender();return}
+if(x.dataset.close!==undefined)return x.closest('.modal').remove();
+if(x.dataset.open){e.preventDefault();return modal(x.dataset.open)}
+if(x.dataset.fav){let f=favs();const k=x.dataset.fav;f=f.includes(k)?f.filter(i=>i!==k):[...f,k];ls.set('favs',f);push({favs:f});const on=f.includes(k);x.setAttribute('aria-pressed',on);x.textContent=on?'♥':'♡';x.setAttribute('aria-label',t(on?'rem':'add'));if(location.hash.startsWith('#/fan'))rerender();return}
+if(x.dataset.ans!==undefined){qz.a=+x.dataset.ans;if(qz.a===QUIZ[qz.i].a)qz.s++;return rerender()}
+if(x.dataset.next!==undefined){if(qz.i===QUIZ.length-1)qz.done=true;else{qz.i++;qz.a=null}return rerender()}
+if(x.dataset.again!==undefined){qz={i:0,s:0,a:null,done:false};return rerender()}
+if(x.dataset.vote){const[id,i]=x.dataset.vote.split(':'),v=ls.get('votes',{}),o=POLLS.find(z=>z.id===id);v[id]=v[id]||o.o.map(()=>0);v[id][+i]++;ls.set('votes',v);return rerender()}
+if(x.dataset.post!==undefined){const ta=$('#pt'),s=ta.value.trim(),m=$('#pm');if(!s){m.textContent=t('empty');return}if(BAD.test(s)){m.textContent=t('bad');return}const ps=ls.get('posts',[]);ps.unshift(s.slice(0,200));ls.set('posts',ps.slice(0,30));return rerender()}
+if(x.dataset.retry!==undefined)route()});
+const rerender=()=>{const y=scrollY;main.innerHTML=P[(location.hash.slice(2)||'home').split('?')[0]]();if(upd)upd();scrollTo(0,y)};
+document.addEventListener('input',e=>{if(e.target.matches('[data-f]')&&upd)upd()});
+document.addEventListener('change',e=>{if(e.target.id==='mt'){ls.set('myteam',e.target.value);push({fav_team:e.target.value||null});rerender()}else if(e.target.matches('[data-f]')&&upd)upd()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal').forEach(m=>m.remove())});
+$('#lang').onclick=()=>{L=L==='ar'?'en':'ar';ls.set('lang',L);ui();route()};
+$('#burger').onclick=()=>{const o=$('#nav').classList.toggle('open');$('#burger').setAttribute('aria-expanded',o)};
+$('#nav').addEventListener('click',e=>{if(e.target.closest('a')){$('#nav').classList.remove('open');$('#burger').setAttribute('aria-expanded','false')}});
+$('#sf').onsubmit=e=>{e.preventDefault();const v=$('#q').value.trim();if(v)location.hash='#/search?q='+encodeURIComponent(v)};
+document.querySelector('.skip').addEventListener('click',e=>{e.preventDefault();main.focus()});
+window.addEventListener('hashchange',async()=>{if(/^#(access_token|error)=/.test(location.hash))await authHash();navUI();route()});boot();
+})();
+
+</script>
+</body></html>
